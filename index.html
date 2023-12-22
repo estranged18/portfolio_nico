@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <title>My site</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f542c36b3.js" crossorigin="anonymous"></script>
+    <!-- icons here: https://fontawesome.com/icons/book?f=classic&s=solid&pc=%238c1515 -->
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo"> 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul id="sidemenu">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Publications</a></li>
+                <li><a href="#">Affiliations</a></li>
                 <li><a href="#">Contacts</a></li>
-            </ul>   
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>   
         </nav>
         <div class="header-text">
             <h2>Marie Skłodowska-Curie Postdoctoral Global Fellow <br><br> 
@@ -46,11 +50,11 @@
                 </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links active-link">Education</p>
-                    <p class="tab-links">Awards</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('awards')">Awards</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="education">
                     <ul>
                         <li><span>2019 - 2020</span><br>Master of Laws (LL.M.) - University of Chicago Law School, USA</li>
                         <li><span>2014 - 2018</span><br>Ph.D. Program in European Law, Alma Mater Studiorum - University of Bologna, Italy</li>
@@ -61,11 +65,181 @@
                         <li><span>2008 - 2013</span><br>Juris Doctor (J.D.) - University of Pisa, Italy</li>
                     </ul>
                 </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2023 - current</span><br>Marie Skłodowska-Curie Postdoctoral Global Fellow, University of California, Berkeley - School of Law</li>
+                        <li><span>Sep 2023 - current</span><br>Marie Skłodowska-Curie Postdoctoral Global Fellow, University of Hamburg, Germany - Institute of Law & Economics</li>
+                        <li><span>Sep 2022 - Aug 2023</span><br>DAAD Postdoctoral Sponsored Researcher, University of Oxford, UK - Saïd Business School </li>
+                        <li><span>Aug 2022 - Aug 2023</span><br>DAAD Postdoctoral Research Fellow - University of Hamburg, Germany - Faculty of Law</li>
+                        <li><span>May 2019 - Jul 2022</span><br>Associate - Clifford Chance LLP, Milan, Italy</li>
+                        <li><span>Jan 2017 - Apr 2019</span><br>Mid-level Associate - Baker McKenzie, Rome, Italy </li>
+                        <li><span>Oct 2018 - Oct 2018</span><br>Mid-level Associate - Baker McKenzie, Geneva, Switzerland </li>
+                        <li><span>Aug 2017 - Aug 2017</span><br>Mid-level Associate - Baker McKenzie, Chicago, US </li>
+                        <li><span>Apr 2014 - Dec 2016</span><br>Trainee - Deloitte Touche Tohmatsu, Rome, Italy </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li><span>Nov 2023</span><br>Leonardo da Vinci Awards 2023 - Leonardo Da Vinci Society & ISSNAF (Italian Scientists and Scholars of North America Foundation)</li>
+                        <li><span>2023</span><br>Marie Skłodowska-Curie Postdoctoral Global Fellow - Horizon Europe Programme (European Commission of the European Union)</li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+                        <li><span>2019 - 2020</span><br></li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<!---------------publications--------------->
+
+<div id="publications">
+    <div class="container">
+        <h1 class="title">Publications</h1>
+        <div class="publications-list">
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Private Equity's Byzantine Tax Stand - An Untold and New Story of Carried Interest</h2>
+                <h3>D. Imparato, 2023</h3>
+                <p>Paper submitted and under peer review</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>The Skewed Playing Field between Private Equity and Family Ownership under the Axe of Tax
+                    Pressure</h2>
+                <h3>D. Imparato, 2023</h3>
+                <p>Paper submitted and under peer review</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Corporate Ownership Structure, Pyramidal Groups and Tax Measures - A Comparative Study</h2>
+                <h3>D. Imparato, 2023</h3>
+                <p>Working paper</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Corporate Ownership Structure, Pyramidal Groups and Tax Measures - A Comparative Study</h2>
+                <h3>D. Imparato, 2023</h3>
+                <p>Working paper</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Corporate Ownership Structure, Pyramidal Groups and Tax Measures - A Comparative Study</h2>
+                <h3>D. Imparato, 2023</h3>
+                <p>Working paper</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Corporate Ownership Structure, Pyramidal Groups and Tax Measures - A Comparative Study</h2>
+                <h3>D. Imparato, 2023</h3>
+                <p>Working paper</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------- affiliation ----------->
+
+<div id="affiliation">
+    <div class="container">
+        <h1 class="title">Affiliations</h1>
+        <div class="affiliation-list">
+            <div>
+                <img src="images/logos/logo1.png" alt="Image 1">
+            </div>
+            <div>
+                <img src="images/logos/logo2.png" alt="Image 2">
+            </div>
+            <div>
+                <img src="images/logos/logo3.png" alt="Image 3">
+            </div>
+            <div>
+                <img src="images/logos/logo4.png" alt="Image 4">
+            </div>
+            <div>
+                <img src="images/logos/logo1 - Copy.png" alt="Image 4">
+            </div>
+            <div>
+                <img src="images/logos/logo2 - Copy.png" alt="Image 4">
+            </div>
+            <div>
+                <img src="images/logos/logo3 - Copy.png" alt="Image 4">
+            </div>
+            <div>
+                <img src="images/logos/logo4 - Copy.png" alt="Image 4">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------- contacts ----------->
+
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="title">Contacts</h1>
+                <p><i class="fa-solid fa-envelope" style="color: #2E2D29;"></i>email@example.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button" style="color: #2E2D29;"></i>1234567890</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright abcd</p>
+    </div>
+</div>
+
+<!-----------JS functions----------->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-------- side menu function --------->
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
 
 </body>
 </html>
