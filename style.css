@@ -19,6 +19,14 @@ body{
     background-position: center;
 
 }
+.header-text h2{
+    font-size: 35px;
+}
+.header-text h1{
+    font-size: 25px;
+    margin-top: 30px;
+    line-height: 40px;
+}
 .container{
     padding: 10px 10%;
 }
@@ -66,11 +74,6 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 20px;
-}
-.header-text h1{
-    font-size: 25px;
-    margin-top: 30px;
-    line-height: 35px;
 }
 
 /* ------------ about ------------ */
@@ -360,7 +363,7 @@ nav .fas{
 
     .header-text{
         padding-top: 200px;
-        font-size: 14px;
+        font-size: 10px;
         text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -368,7 +371,15 @@ nav .fas{
         1px 1px 0 #000;
     }
     .header-text h1{
-        font-size: 18px;
+        font-size: 16px;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+    .header-text h2{
+        font-size: 26px;
         text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
