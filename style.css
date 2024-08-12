@@ -31,7 +31,8 @@ nav{
 }
 
 .logo{
-    width: 400px;
+    margin-top: -25px;
+    width: 500px;
 
 }
 
@@ -358,7 +359,7 @@ nav .fas{
     }
 
     .header-text{
-        padding-top: 300px;
+        padding-top: 200px;
         font-size: 14px;
         text-shadow:
         -1px -1px 0 #000,
@@ -401,7 +402,8 @@ nav .fas{
         cursor: pointer;
     }
     .logo{
-        width: 250px;
+        margin-top: -10px;
+        width: 300px;
     }
 
     /**** about  ****/
